@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%233b82f6'%3EA%3C/text%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%23ffffff' opacity='0.7'%3E/%3C/text%3E%3C/svg%3E">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angga Septian | Project Archive</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;700;900&display=swap');
+        
+        :root {
+            --hitam: #000000;
+            --biru: #3b82f6;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--hitam); 
+            color: #cbd5e1; 
+        }
+
+        .font-mono { font-family: 'Fira Code', monospace; }
+        
+        .bg-custom-gradient {
+            background: radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.2) 0, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(29, 78, 216, 0.1) 0, transparent 50%),
+                        var(--hitam);
+        }
+    </style>
+</head>
+<body class="bg-custom-gradient min-h-screen flex flex-col">
+
+    <header class="fixed top-0 w-full z- backdrop-blur-md border-b border-white/5 bg-black/20">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-white font-black text-2xl tracking-tighter uppercase text-blue-500">
+                Angga<span class="text-white">.</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-[11px] font-mono uppercase tracking-[0.2em]">
+                <a href="index" class="hover:text-blue-400 text-slate-400 transition-all">Portfolio</a>
+                <a href="pengalaman" class="hover:text-blue-400 text-slate-400 transition-all">Experience</a>
+                <a href="projek" class="text-blue-400 font-bold transition-all">Projects</a>
+                <a href="diary" class="hover:text-blue-400 text-slate-400 transition-all">Life Logs</a>
+                <a href="./#kontak" class="px-5 py-2 bg-blue-600/10 border border-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-all font-bold">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 lg:pt-48 flex-grow">
+        
+        <div class="mb-20">
+            <h1 class="text-6xl lg:text-8xl font-black text-white leading-[0.85] tracking-tighter mb-6 uppercase italic">
+                Project <br>
+                <span class="text-blue-500">Archive.</span>
+            </h1>
+            <p class="text-slate-500 font-mono text-xs uppercase tracking-widest">// Dokumentasi portofolio profesional dan eksplorasi teknologi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+            
+            <article class="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:border-blue-500/30 transition-all flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fas fa-laptop-code text-2xl text-blue-500"></i>
+                    <a href="https://github.com/anggasptn" target="_blank" class="text-slate-500 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase italic font-black">Personal Portfolio v1.0</h3>
+                <p class="text-[13px] text-slate-400 leading-relaxed mb-8 flex-grow">
+                    Pengembangan website profil profesional berbasis statis menggunakan Tailwind CSS. Fokus pada optimasi antarmuka dan kecepatan akses.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[9px] font-mono text-slate-500 uppercase font-bold">
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">HTML5</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Tailwind CSS</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Git</span>
+                </div>
+            </article>
+
+            <!-- 2. DIGITAL EMBROIDERY (Penyempurnaan dengan Link Klik) -->
+            <article class="p-8 bg-zinc-900/40 border border-white/5 rounded-2xl group hover:border-blue-500/30 transition-all flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fas fa-bezier-curve text-2xl text-blue-500"></i>
+                    <span class="text-[9px] font-mono text-slate-600 uppercase font-bold">Design Tech</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase italic font-black">Digital Embroidery</h3>
+                <p class="text-[13px] text-slate-400 leading-relaxed mb-8 flex-grow">
+                    Eksplorasi digitizing pola bordir menggunakan Inkstitch. Mencakup manajemen <span class="text-white italic">path</span> yang kompleks, optimasi alur jahitan, dan simulasi hasil akhir untuk kebutuhan manufaktur industri.
+                </p>
+
+                <div class="mb-8 border-t border-white/5 pt-6 space-y-3">
+                    
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="assets/img/projects/inkstitch/vector-ayam.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/vector-ayam.png" alt="Vector Ayam Jago" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">V1</span>
+                        </a>
+                        <a href="assets/img/projects/inkstitch/proses-ayam.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/proses-ayam.png" alt="Proses Inkstitch Ayam" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">P1</span>
+                        </a>
+                        <a href="assets/img/projects/inkstitch/realistic-ayam.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/realistic-ayam.png" alt="Realistic Render Ayam" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">R1</span>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2">
+                        <a href="assets/img/projects/inkstitch/vector-bunga.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/vector-bunga.png" alt="Vector Bunga" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">V2</span>
+                        </a>
+                        <a href="assets/img/projects/inkstitch/proses-bunga.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/proses-bunga.png" alt="Proses Inkstitch Bunga" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">P2</span>
+                        </a>
+                        <a href="assets/img/projects/inkstitch/realistic-bunga.png" target="_blank" class="relative group/photo aspect-square bg-black/50 rounded-lg overflow-hidden border border-white/5 block">
+                            <img src="assets/img/projects/inkstitch/realistic-bunga.png" alt="Realistic Render Bunga" class="w-full h-full object-contain grayscale group-hover/photo:grayscale-0 group-hover/photo:scale-110 transition-all duration-500">
+                            <span class="absolute top-1 right-1 text-[7px] font-mono text-white/50 bg-black/70 px-1 py-0.5 rounded uppercase">R2</span>
+                        </a>
+                    </div>
+                    
+                    <p class="text-[9px] text-slate-600 font-mono text-center pt-2 font-medium italic">// Click to view full details (V=Vector, P=Proses, R=Realistic)</p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 text-[9px] font-mono text-slate-500 uppercase font-bold mt-auto pt-6 border-t border-white/5">
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Inkstitch</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Inkscape</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Digitizing</span>
+                </div>
+            </article>
+
+            </article>
+
+            <article class="bg-zinc-900/40 border border-white/5 p-8 rounded-2xl hover:border-blue-500/30 transition-all flex flex-col">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fas fa-tools text-2xl text-blue-500"></i>
+                    <span class="text-[9px] font-mono text-slate-600 uppercase font-bold">IT Infrastructure</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase italic font-black">System Building</h3>
+                <p class="text-[13px] text-slate-400 leading-relaxed mb-8 flex-grow">
+                    Eksplorasi perakitan dan pemeliharaan perangkat keras PC sebagai implementasi latar belakang pendidikan Teknik Komputer dan Jaringan.
+                </p>
+                <div class="flex flex-wrap gap-2 text-[9px] font-mono text-slate-500 uppercase font-bold">
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Hardware</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Assembling</span>
+                    <span class="px-2 py-1 bg-white/5 rounded border border-white/10">Troubleshooting</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center px-6 mt-auto bg-black/20">
+        <div class="text-[9px] font-mono uppercase tracking-[0.5em] text-slate-700 font-bold italic">
+            Angga Septian &copy; 2026 // Connect on <a href="https://www.linkedin.com/in/anggaseptian6" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>

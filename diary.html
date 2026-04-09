@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%233b82f6'%3EA%3C/text%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%23ffffff' opacity='0.7'%3E/%3C/text%3E%3C/svg%3E">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angga Septian | Life Logs</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;700;900&display=swap');
+        
+        :root {
+            --hitam: #000000;
+            --biru: #3b82f6;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--hitam); 
+            color: #cbd5e1; 
+        }
+
+        .font-mono { font-family: 'Fira Code', monospace; }
+        
+        .bg-custom-gradient {
+            background: radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.2) 0, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(29, 78, 216, 0.1) 0, transparent 50%),
+                        var(--hitam);
+        }
+    </style>
+</head>
+<body class="bg-custom-gradient min-h-screen flex flex-col">
+
+    <!-- 1. NAVIGATION BAR (Navigasi ke halaman lain) -->
+    <header class="fixed top-0 w-full z-[100] backdrop-blur-md border-b border-white/5 bg-black/20">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-white font-black text-2xl tracking-tighter uppercase text-blue-500">
+                Angga<span class="text-white">.</span>
+            </div>
+
+            <!-- Menu Links -->
+            <div class="hidden md:flex items-center gap-8 text-[11px] font-mono uppercase tracking-[0.2em]">
+                <a href="index" class="hover:text-blue-400 text-slate-400 transition-all">Portfolio</a>
+                <a href="pengalaman" class="hover:text-blue-400 text-slate-400 transition-all">Experience</a>
+                
+                <!-- Link Projek Baru -->
+                <a href="projek" class="hover:text-blue-400 text-slate-400 transition-all">Projects</a>
+                
+                <!-- Aktif di halaman Diary -->
+                <a href="diary" class="text-blue-400 font-bold">Life Logs</a>
+                
+                <a href="./#kontak" class="px-5 py-2 bg-blue-600/10 border border-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-all font-bold">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 lg:pt-48 flex-grow">
+        
+        <!-- 2. HEADER DIARY -->
+        <div class="mb-20">
+            <h1 class="text-6xl lg:text-8xl font-black text-white leading-[0.85] tracking-tighter mb-6 uppercase">
+                Life <br>
+                <span class="text-blue-500 italic">Logs.</span>
+            </h1>
+            <p class="text-slate-400 max-w-xl text-sm md:text-base leading-relaxed">
+                Tempat gue nyatet progres harian. Mulai dari urusan logistik, update bulking, latihan boxing, sampe curhatan kodingan malam-malam.
+            </p>
+        </div>
+
+        <!-- 3. FEED CATATAN (Satu kartu, satu cerita) -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32">
+            
+            <!-- Log 1: Karir & IT -->
+            <article class="bg-zinc-900/40 border border-white/5 rounded-2xl p-6 hover:border-blue-500/30 transition-all group">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="px-2 py-1 bg-blue-500/10 text-blue-500 text-[9px] font-mono rounded uppercase tracking-widest font-bold">#CareerUpdate</span>
+                    <span class="text-[10px] text-slate-500 font-mono italic">8 April 2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-tight italic">Interview & WMS</h3>
+                <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                    Abis bahas soal Staging dan PDT pas interview online tadi. Materi gudang aman, tinggal asah lagi cara ngejelasinnya biar makin mantap.
+                </p>
+                <div class="h-40 w-full bg-black/50 rounded-xl border border-white/5 flex items-center justify-center overflow-hidden">
+                    <i class="fas fa-laptop-code text-3xl text-slate-700 group-hover:scale-110 transition-transform duration-500"></i>
+                </div>
+            </article>
+
+            <!-- Log 2: Bulking & Physical -->
+            <article class="bg-zinc-900/40 border border-white/5 rounded-2xl p-6 hover:border-red-500/30 transition-all group">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="px-2 py-1 bg-red-500/10 text-red-500 text-[9px] font-mono rounded uppercase tracking-widest font-bold">#Bulking</span>
+                    <span class="text-[10px] text-slate-500 font-mono italic">5 April 2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-tight italic">57KG & Boxing</h3>
+                <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                    Berat masih 57kg. Harus lebih disiplin makan biar target 70kg tembus. Tenaga buat boxing pagi jam 05:15 kerasa agak kurang kalo begadang ngoding.
+                </p>
+                <!-- Progress weight bar -->
+                <div class="mt-auto">
+                    <div class="flex justify-between text-[10px] font-mono text-slate-500 mb-2 font-bold italic">
+                        <span>Target 70kg</span>
+                        <span class="text-red-400">57kg</span>
+                    </div>
+                    <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div class="h-full bg-red-500" style="width: 81%"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Log 3: Jalanan Cikarang -->
+            <article class="bg-zinc-900/40 border border-white/5 rounded-2xl p-6 hover:border-green-500/30 transition-all group">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="px-2 py-1 bg-green-500/10 text-green-500 text-[9px] font-mono rounded uppercase tracking-widest font-bold">#OnTheRoad</span>
+                    <span class="text-[10px] text-slate-500 font-mono italic">1 April 2026</span>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-tight italic">InDrive & Layout</h3>
+                <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                    Narik di area Cikarang sambil ngebayangin layout web ini biar nggak ngebosenin. Alhamdulillah target ketutup buat hari ini. Gas!
+                </p>
+                <div class="h-40 w-full bg-black/50 rounded-xl border border-white/5 flex items-center justify-center overflow-hidden">
+                    <i class="fas fa-motorcycle text-3xl text-slate-700 group-hover:scale-110 transition-transform duration-500"></i>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- 4. FOOTER SIMPLE (Biar beda sama halaman utama) -->
+    <footer class="py-12 border-t border-white/5 text-center px-6 mt-auto bg-black/20">
+        <div class="text-[9px] font-mono uppercase tracking-[0.5em] text-slate-700 font-bold italic">
+            Angga Septian &copy; 2026 // Keep Moving Forward
+        </div>
+    </footer>
+
+</body>
+</html>

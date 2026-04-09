@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000000'/%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%233b82f6'%3EA%3C/text%3E%3Ctext x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Fira Code, monospace' font-weight='900' font-size='60' fill='%23ffffff' opacity='0.7'%3E/%3C/text%3E%3C/svg%3E">
+    <!-- Meta Tags untuk Preview Link -->
+    <meta name="description" content="Portfolio Angga Septian - Logistics Operations & Tech Enthusiast based in Cikarang.">
+    <meta property="og:title" content="Angga Septian | Portfolio">
+    <meta property="og:description" content="Praktisi logistik dengan minat besar pada pengembangan web dan teknologi.">
+    <meta property="og:image" content="assets/img/profile/profil-angga.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angga Septian | Portfolio</title>
+    
+    <!-- Script Tailwind & Font Awesome (Ikon) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;700;900&display=swap');
+        
+        :root {
+            --hitam-pekat: #000000;
+            --biru-akses: #3b82f6;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--hitam-pekat); 
+            color: #cbd5e1; 
+        }
+
+        .font-mono { font-family: 'Fira Code', monospace; }
+        
+        /* Background Gradasi radial halus */
+        .bg-custom-gradient {
+            background: radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.25) 0, transparent 50%),
+                        radial-gradient(at 100% 100%, rgba(29, 78, 216, 0.15) 0, transparent 50%),
+                        var(--hitam-pekat);
+        }
+
+        /* Animasi Efek Mengetik pada judul */
+        .typewriter {
+            overflow: hidden;
+            border-right: 3px solid var(--biru-akses);
+            white-space: nowrap;
+            width: 0;
+            animation: typing 2.5s steps(30) forwards, blink 0.75s infinite;
+        }
+
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink { 50% { border-color: transparent } }
+    </style>
+</head>
+<body class="bg-custom-gradient min-h-screen">
+
+    <!-- 1. NAVIGATION BAR: Bagian menu atas -->
+    <header class="fixed top-0 w-full z-[100] backdrop-blur-lg border-b border-white/5 bg-black/30">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-white font-black text-2xl tracking-tighter uppercase text-blue-500">
+                Angga<span class="text-white">.</span>
+            </div>
+
+            <!-- Menu Links -->
+            <div class="hidden md:flex items-center gap-8 text-[11px] font-mono uppercase tracking-[0.2em]">
+                <!-- Portfolio (Active di index.html) -->
+                <a href="index" class="text-blue-400 font-bold transition-colors">Portfolio</a>
+                
+                <!-- Experience -->
+                <a href="pengalaman" class="hover:text-blue-400 text-slate-400 transition-colors">Experience</a>
+                
+                <!-- Projects (Halaman baru yang kita buat tadi) -->
+                <a href="projek" class="hover:text-blue-400 text-slate-400 transition-colors">Projects</a>
+                
+                <!-- Life Logs -->
+                <a href="diary" class="hover:text-blue-400 text-slate-400 transition-colors">Life Logs</a>
+                
+                <!-- Kontak -->
+                <a href="./#kontak" class="px-4 py-2 bg-blue-600/10 border border-blue-500/20 text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-all font-bold tracking-widest uppercase shadow-[0_0_15px_rgba(59,130,246,0.1)]">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 lg:pt-48">
+        
+        <!-- 2. SECTION: HERO (Profil Utama & Visual Atas) -->
+        <section class="grid lg:grid-cols-12 gap-16 items-start mb-40">
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-green-500/5 border border-green-500/20 rounded-full mb-6 text-green-400 text-[10px] font-mono uppercase tracking-widest">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Aktif dalam operasional transportasi (inDrive)
+                </div>
+
+                <div class="mb-8">
+                    <h1 class="text-6xl lg:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-4 uppercase text-balance">
+                        Logistics Ops <br>
+                        <span class="inline-block text-blue-500 typewriter italic font-bold">& Ngulik IT.</span>
+                    </h1>
+                    <p class="text-lg text-slate-400 leading-relaxed max-w-lg font-medium">
+                        Praktisi operasional logistik yang memiliki minat tinggi dalam pengembangan teknologi dan pemrograman web.
+                    </p>
+                </div>
+
+                <!-- Informasi Fisik & Hobi -->
+                <div class="flex gap-12 border-t border-white/10 pt-10">
+                    <div>
+                        <span class="block text-[10px] font-mono text-blue-500 uppercase mb-2 italic tracking-widest font-bold">Height</span>
+                        <span class="text-2xl font-bold text-white tracking-tighter">178<span class="text-sm font-normal text-slate-500 ml-1 uppercase">cm</span></span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] font-mono text-blue-500 uppercase mb-2 italic tracking-widest font-bold">Weight</span>
+                        <span class="text-2xl font-bold text-white tracking-tighter">57<span class="text-sm font-normal text-slate-500 ml-1 uppercase">kg</span></span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] font-mono text-blue-500 uppercase mb-2 italic tracking-widest font-bold">Hobby</span>
+                        <span class="text-2xl font-bold text-white tracking-tighter uppercase font-black">Boxing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Foto Profil -->
+            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+                <div class="relative w-72 h-96 group">
+                    <div class="absolute inset-0 border-2 border-blue-500/30 rounded-2xl translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                    <div class="relative w-full h-full bg-zinc-900 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="assets/img/profile/profil-angga.png" alt="Angga Septian" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECTION: ABOUT (Narasi Profesional) -->
+        <section id="about" class="mb-40">
+    <h2 class="text-xs font-mono text-blue-500 uppercase tracking-[0.4em] mb-10 italic font-bold">// About Me</h2>
+    <div class="bg-white/[0.01] border border-white/5 p-8 rounded-2xl">
+        <p class="text-slate-400 leading-relaxed text-[15px] font-medium max-w-3xl">
+            Saya adalah seorang <span class="text-white font-bold">lulusan SMK Teknik Komputer dan Jaringan</span> yang memiliki minat besar terhadap dunia teknologi dan sistem operasional industri. Berdomisili di Cikarang Barat, saya telah membangun pengalaman kerja di berbagai sektor manufaktur dan logistik, mulai dari kontrol kualitas komponen hingga manajemen distribusi gudang.
+            <br><br>
+            Latar belakang pendidikan TKJ memberikan saya pondasi kuat dalam memahami infrastruktur digital. Di sela kesibukan profesional, saya aktif mendalami pengembangan web statis, manajemen perangkat keras PC, serta desain bordir digital menggunakan <span class="text-white italic font-bold">Inkstitch</span>. 
+            <br><br>
+            Kedisiplinan fisik yang saya asah melalui rutinitas <span class="text-white italic font-bold">boxing</span> setiap pagi pada pukul 05:15 merupakan cara saya menjaga integritas, fokus, dan stamina untuk terus berkembang di dunia kerja maupun teknologi.
+        </p>
+    </div>
+</section>
+
+        <!-- 4. SECTION: SKILLS (Ringkasan Keahlian & Alat Kerja) -->
+        <section id="skills" class="mb-40">
+            <h2 class="text-xs font-mono text-blue-500 uppercase tracking-[0.4em] mb-12 italic font-bold">// Core Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Keahlian Industri & Alat Kerja -->
+                <div class="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
+                    <h3 class="text-lg font-bold text-white mb-6 uppercase italic tracking-widest text-[13px]">Operasional Logistik</h3>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-300">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">WMS & PDT System</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Handjack Operations</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Pallet Mover Ops</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Picking & Loading</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Staging Management</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Quality Control</span>
+                    </div>
+                </div>
+                <!-- Keahlian Teknologi -->
+                <div class="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
+                    <h3 class="text-lg font-bold text-white mb-6 uppercase italic tracking-widest text-[13px]">Teknologi & Desain</h3>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-300">
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">HTML & Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Inkstitch Design/Embroidery</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">PC Hardware Management</span>
+                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded">Computer Networking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SECTION: PROJECTS (Portofolio Karya) -->
+        <section id="projects" class="mb-40">
+            <h2 class="text-xs font-mono text-blue-500 uppercase tracking-[0.4em] mb-12 italic font-bold">// Featured Projects</h2>
+            
+            <!-- Grid untuk 2 Projek Utama -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <article class="p-8 bg-zinc-900/40 border border-white/5 rounded-2xl group transition-all hover:bg-zinc-900/60">
+                    <span class="text-[9px] font-mono text-blue-500 uppercase tracking-widest block mb-2 font-bold italic">Web Development</span>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase italic font-black">Personal Portfolio Web</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Pengembangan website portofolio mandiri yang dibangun menggunakan Tailwind CSS untuk mendokumentasikan karir dan keahlian secara profesional.
+                    </p>
+                </article>
+
+                <article class="p-8 bg-zinc-900/40 border border-white/5 rounded-2xl group transition-all hover:bg-zinc-900/60">
+                    <span class="text-[9px] font-mono text-blue-500 uppercase tracking-widest block mb-2 font-bold italic">Digital Design</span>
+                    <h3 class="text-xl font-bold text-white mb-3 uppercase italic font-black">Embroidery Pattern Design</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Implementasi desain pola bordir digital menggunakan perangkat lunak Inkstitch untuk kebutuhan manufaktur pakaian.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Tombol Navigasi ke Halaman Projek Lengkap -->
+            <div class="text-center">
+                <a href="projek.html" class="inline-flex items-center gap-3 text-[10px] font-mono text-slate-500 hover:text-blue-400 transition-all uppercase tracking-[0.3em] font-bold italic group">
+                    Eksplorasi Semua Projek 
+                    <i class="fas fa-arrow-right transition-transform group-hover:translate-x-2 text-blue-500"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. SECTION: EXPERIENCE (Highlight Karir) -->
+        <section id="karir" class="mb-40">
+            <h2 class="text-xs font-mono text-blue-500 uppercase tracking-[0.4em] mb-12 italic font-bold">// Professional History</h2>
+            
+            <div class="grid gap-4 text-sm">
+                <!-- Pekerjaan Terakhir: Lion Superindo -->
+                <article class="group/card bg-white/[0.02] border border-white/5 p-8 rounded-2xl hover:bg-white/[0.05] transition-all border-l-4 border-l-blue-500">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-1 uppercase italic tracking-tight underline decoration-blue-500/30 italic">Picker & Loader</h3>
+                            <p class="font-mono text-blue-400 text-sm tracking-widest font-bold uppercase">PT Lion Superindo</p>
+                        </div>
+                        <span class="px-3 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-mono rounded border border-blue-500/20 uppercase tracking-widest font-bold italic">Latest Experience</span>
+                    </div>
+                    
+                    <p class="text-slate-400 leading-relaxed max-w-2xl mb-6 font-medium">
+                        Bertanggung jawab dalam proses pengambilan barang (picking) dan pemuatan (loading) sesuai dengan Standar Operasional Prosedur (SOP) pergudangan retail.
+                    </p>
+
+                    <details class="group/detail">
+                        <summary class="flex items-center gap-2 cursor-pointer text-[11px] font-mono text-blue-500 uppercase tracking-widest font-bold hover:text-blue-400 transition-colors list-none">
+                            <span>Lihat Rincian Tugas</span>
+                            <i class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-open/detail:rotate-180"></i>
+                        </summary>
+                        
+                        <div class="mt-4 pl-4 border-l-2 border-blue-500/20 text-slate-400 text-[13px] leading-relaxed">
+                            <ul class="list-disc pl-4 space-y-2 marker:text-blue-500">
+                                <li>Mengoperasikan perangkat <strong class="text-white font-semibold italic uppercase">PDT</strong> untuk menjaga akurasi data inventaris pada sistem WMS.</li>
+                                <li>Melakukan konsolidasi unit di area <strong class="text-white font-semibold italic uppercase">Staging</strong> guna mengoptimalkan proses distribusi.</li>
+                                <li>Melakukan verifikasi label <strong class="text-white font-semibold italic uppercase">LPN</strong> untuk meminimalisir kesalahan pengiriman barang.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- Pekerjaan: PT Foreseight Global -->
+                <article class="bg-white/[0.01] border border-white/5 p-8 rounded-2xl opacity-80 hover:opacity-100 transition-all">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1 uppercase tracking-tight italic">Admin Produksi / Packer</h3>
+                            <p class="font-mono text-slate-500 text-xs tracking-widest font-bold uppercase">PT Foreseight Global Foundation</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed text-[13px]">
+                        Menangani dokumentasi administrasi produksi serta memastikan standar kualitas pengemasan unit terjaga sebelum proses distribusi dilakukan.
+                    </p>
+                </article>
+
+                <!-- Tombol link ke 5 PT Lengkap -->
+                <div class="text-center mt-6">
+                    <a href="pengalaman.html" class="text-[10px] font-mono text-slate-500 hover:text-blue-400 transition-all uppercase tracking-[0.3em] font-bold italic underline">Tampilkan Seluruh Riwayat Pekerjaan</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. FOOTER & KONTAK -->
+    <div class="flex justify-center gap-10 text-2xl mb-16">
+    <!-- Instagram -->
+    <a href="LINK_IG_LO_DI_SINI" target="_blank" class="text-slate-500 hover:text-pink-500 transition-colors">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <!-- LinkedIn (Sudah Aktif) -->
+    <a href="https://www.linkedin.com/in/anggaseptian6" target="_blank" class="text-slate-500 hover:text-blue-500 transition-colors">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    
+    <!-- Facebook (Ini yang lo cari) -->
+    <a href="LINK_FB_LO_DI_SINI" target="_blank" class="text-slate-500 hover:text-blue-600 transition-colors">
+        <i class="fab fa-facebook"></i>
+    </a>
+    
+    <!-- GitHub (Sudah Aktif) -->
+    <a href="https://github.com/anggasptn" target="_blank" class="text-slate-500 hover:text-white transition-colors">
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <!-- WhatsApp (Sudah Aktif) -->
+    <a href="https://wa.me/6281394567417" target="_blank" class="text-slate-500 hover:text-green-500 transition-all scale-125">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+    </footer>
+
+</body>
+</html>
